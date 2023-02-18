@@ -2,19 +2,17 @@
 
 /**
  *main - Entry point
+ *
  *Return: Always 0 (Success)
  */
 int main(void)
 {
 	int i;
-	int ch;
 
-	ch = 97;
 	i = 0;
-	while (i < 26)
+	while (i < 10)
 	{
-		putchar(ch);
-		ch++;
+		printf("%d", i);
 		i++;
 	}
 	putchar(10);
