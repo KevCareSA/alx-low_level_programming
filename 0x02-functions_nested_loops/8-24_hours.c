@@ -1,4 +1,4 @@
-#include "media.h"
+#include "main.h"
 
 /**
  *jack_bauer - prints time count up
