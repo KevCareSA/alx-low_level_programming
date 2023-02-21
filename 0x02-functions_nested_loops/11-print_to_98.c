@@ -7,31 +7,18 @@
  */
 void print_to_98(int n)
 {
-	int val;
-
-	val = n;
-	if ((val > 98) || (val == 98))
+	if (n >= 98)
 	{
-		while (val >= 98)
-		{
-			if (val == 98)
-				printf("%d", val);
-			else
-																								printf("%d, ", val);
-			val--;
-		}
+		while (n > 98)
+			printf("%d, ", n--);
 
-		else if ((val < 98) || (val == 98))
-		{
-			while (val <= 98)
-			{
-				if (val == 98)
-					printf("%d", val);
-				else
-					printf("%d, ", val);
-				val++;
-			}
-		}
-		putchar('\n');
+		printf("%d\n", n);
+	}
+	else
+	{
+		while (n < 98)
+			printf("%d, ", n++);
+
+		printf("%d\n", n);
 	}
 }
