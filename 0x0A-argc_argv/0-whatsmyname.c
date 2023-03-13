@@ -1,13 +1,12 @@
 #include <stdio.h>
 
 /**
- * main - programs main function
- * @argc: number of things typed in command line
- * @argv: array of string values for typed things
- * Return: returns the name of the program followed by a new line.
- * If you rename the program, it will print the new name,
- * without having to compile it again
+ * main - a program that prints its name, followed by a new line.
+ * @argc: number of command line arguments.
+ * @argv: array that contains the program command line arguments.
+ * Return: 0
  */
+
 int main(int argc, char *argv[])
 {
 	printf("%s\n", argv[argc - 1]);
