@@ -1,15 +1,20 @@
+#include <stdio.h>
 #include "main.h"
-
 /**
- *_islower - check if a character is lower caser
- * @c : character to check the case
+ * _islower - function name
+ * @c : varable
+ * description : checks if it is caselower
  *
- *Return: throws 1 else throws 0
+ * Return: int
  */
 int _islower(int c)
 {
-	if ((c >= 97) && (c <= 122))
+	if (c >= 97 && c <= 122)
+	{
 		return (1);
+	}
 	else
+	{
 		return (0);
+	}
 }
